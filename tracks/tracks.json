@@ -1,0 +1,9 @@
+{
+    "layout": "layouts/post.njk",
+    "permalink": "tracks/{{ title | slug }}/index.html",
+    "class": "tracks",
+    "tags": [
+      "tracks"
+    ]
+  }
+  
