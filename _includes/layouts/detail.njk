@@ -1,0 +1,27 @@
+{% extends "layouts/default.njk" %}
+
+
+
+
+
+{% block content %} 
+<main class="content"> 
+<div class="caption-text"><h1><span>{{ title }}</span></h1></div> 
+ <div class="grid-2-columns-2x1">
+
+ <div class="textwrapper">
+{{ layoutContent | safe }}
+</div>
+<div class="sidebarwrapper">
+<aside>
+{% set postslist = collections.testimonials %}
+{% include "components/postslist-sidebar.njk" %}
+</aside>
+</div>
+
+ </div>
+</main>
+{% endblock %}
+
+
+
