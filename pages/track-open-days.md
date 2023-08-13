@@ -10,7 +10,7 @@ metadata:
   title: About Third Avenue Consulting
 eleventyNavigation:
   key: Track Open Days
-  order: 2
+  order: 1
 ---
 
 

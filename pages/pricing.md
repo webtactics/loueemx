@@ -8,7 +8,7 @@ date: 2023-07-20
 permalink: /booking-and-pricing-information/
 eleventyNavigation:
   key: Pricing
-  order: 3
+  order: 2
 ---
 
 # Media Training: #
