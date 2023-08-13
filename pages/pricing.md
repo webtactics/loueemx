@@ -1,11 +1,11 @@
 ---
 layout: layouts/default.njk
-title: Media Training
+title: Louee Pricing Information
 description: How prepared are your executives to handle media interviews – both positive and hostile?
 class: media-training
 section: media-training
 date: 2023-07-20
-permalink: /media-training/
+permalink: /booking-and-pricing-information/
 eleventyNavigation:
   key: Media Training
   order: 3

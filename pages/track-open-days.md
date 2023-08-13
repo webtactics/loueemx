@@ -1,11 +1,11 @@
 ---
 layout: layouts/default.njk
-title: About Third Avenue Consulting
+title: Track Open Days
 description: Rochelle Burbury has more than 25 years’ experience as a journalist and editor, media trainer and PR professional.
 section: about
 class: about
 date: 2023-07-20
-permalink: /about/
+permalink: /track-open-days/
 metadata:
   title: About Third Avenue Consulting
 eleventyNavigation:
