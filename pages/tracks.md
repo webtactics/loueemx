@@ -7,7 +7,7 @@ section: tracks
 date: 2023-07-20
 permalink: /tracks/
 eleventyNavigation:
-  key: tracks
+  key: Tracks
   order: 4
 ---
 
