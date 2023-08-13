@@ -1,7 +1,6 @@
 ---
 title: Macquarie Media Limited
 date: 2023-04-01
-permalink: /testimonials/Macquarie-Media-Limited/
 Contactname: Nick Randall
 Contactposition: National Agency Sales Director
 Website: https://www.macquariemedia.com.au/
