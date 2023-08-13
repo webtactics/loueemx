@@ -509,7 +509,7 @@ transition: all 0.6s;
 
 
 /* Menus */
-.childlist { float: right;margin:0 1rem 0 auto;  }
+.navlist { float: right;margin:0 1rem 0 auto;  }
 
 ul.menusocial, ul.main-menu, ul.footer-menu, ul.second-level {
   list-style: none;
