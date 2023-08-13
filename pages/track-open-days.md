@@ -9,7 +9,7 @@ permalink: /track-open-days/
 metadata:
   title: About Third Avenue Consulting
 eleventyNavigation:
-  key: About
+  key: Track Open Days
   order: 2
 ---
 
