@@ -1,23 +1,31 @@
-<nav class="childlist">
-{% set navPages = collections.all | eleventyNavigation %}
-{% macro renderNavListItem(entry) -%}
-<li{% if entry.url == page.url %} class="active-class"{% endif %}>
-<a href="{{ entry.url }}" title="{{ entry.title }}" alt="{{ entry.title }}">{{ entry.title }}</a>
-
-  {% if entry.url == "/legal-services/" %}
-<ul class="second-level">
-<li><a href="/legal-services/criminal-law-services/">Criminal Law</a></li>
-<li><a href="/legal-services/family-law-services/">Family Law</a></li>
-<li><a href="/legal-services/property-and-conveyancing-law-services/">Property &amp; Conveyancing</a></li>
-<li><a href="/legal-services/traffic-and-driving-offences/">Traffic &amp; Driving</a></li>
-<li><a href="/legal-services/wills-and-estate-planning-services/">Wills &amp; Estate</a></li>
-</ul>
+<nav class="navlist">
+  {% set navPages = collections.all | eleventyNavigation %}
+  {% macro renderNavListItem(entry) -%}
+  <li{% if entry.url == page.url %} class="active-class"{% endif %}>
+    <a href="{{ entry.url }}" title="{{ entry.title }}" alt="{{ entry.title }}">{{ entry.title }}</a>
+    {% if entry.url == "/recipes/main-ingredient/" %}
+      <ul class="fly-out-menu">
+        <li><a href="/recipes/main-ingredient/vegetarian/" title="Vegetarian Recipes" alt="Vegetarian Recipes">Vegetarian Recipes</a></li>
+        <li><a href="/recipes/main-ingredient/noodles-ingredients/" title="Noodles Recipes" alt="Noodles Recipes">Noodles Recipes</a></li>
+        <li><a href="/recipes/main-ingredient/seafood/" title="Seafood Recipes" alt="Seafood Recipes">Seafood Recipes</a></li>
+        <li><a href="/recipes/main-ingredient/poultry-based-recipes/" title="Poultry Recipes" alt="Poultry Recipes">Poultry Recipes</a></li>
+        <li><a href="/recipes/main-ingredient/pork/" title="Pork Recipes" alt="Pork Recipes">Pork Recipes</a></li>
+        <li><a href="/recipes/main-ingredient/lamb/" title="Lamb Recipes" alt="Lamb Recipes">Lamb Recipes</a></li>
+        <li><a href="/recipes/main-ingredient/beef/" title="Beef Recipes" alt="Beef Recipes">Beef Recipes</a></li>
+        <!-- Add more fly-out items here as needed -->
+      </ul>
     {% endif %}
+    {% if entry.children.length %}
+      <ul class="second-level">
+        {% for child in entry.children %}
+          {{ renderNavListItem(child) }}
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </li>
+  {%- endmacro %}
 
-</li>
-{%- endmacro %}
-<ul class="main-menu">
-{%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
-</ul>
+  <ul class="main-menu">
+    {%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
+  </ul>
 </nav>
-
