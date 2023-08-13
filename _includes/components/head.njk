@@ -10,16 +10,16 @@
 
 
 <title>{{ title or metadata.title }} - {{ metadata.title }}</title>
-<link rel="canonical" href="https://thirdavenue.com.au{{ page.url or post.url or permalink }}" />
+<link rel="canonical" href="https://louee.au{{ page.url or post.url or permalink }}" />
 <meta name="description" content="{{ description or metadata.description or eleventyComputed.description }}" />
 <meta property="og:title" content="{{ title or metadata.title }}" />
 <meta property="og:description" content="{{ description or metadata.description or eleventyComputed.description }}" />
 <meta property="og:image" content="{{ image or metadata.image or eleventyComputed.image }}/tr:w-1200,h-800" />
-<meta property="og:url" content="https://thirdavenue.com.au{{ page.url or post.url or permalink }}" />
+<meta property="og:url" content="https://louee.au{{ page.url or post.url or permalink }}" />
 
 
 {% set css %}
-    {% include "assets/css/thirdavenue-grid.css" %}
+    {% include "assets/css/louee-grid.css" %}
   {% endset %}
   <style>{{ css | cssmin | safe }}</style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
