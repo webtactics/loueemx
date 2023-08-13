@@ -1,35 +1,30 @@
-<nav>
-{% set navPages = collections.all | eleventyNavigation %}
+<nav class="navlist">
+  {% set navPages = collections.all | eleventyNavigation %}
+  {% macro renderNavListItem(entry) -%}
+  <li{% if entry.url == page.url %} class="active-class"{% endif %}>
+    <a href="{{ entry.url }}" title="{{ entry.title }}" alt="{{ entry.title }}">{{ entry.title }}</a>
 
-{% macro renderNavListItem(entry) %}
-  {% if entry.children.length %}
-    <li>
-      <details
-        {%- for child in entry.children %}
-          {% if child.parent == entry.title and child.url == page.url %}
-            class="is-active"
-            open
-          {% endif %}
+
+
+    {% if entry.url == "/accommodation/" %}
+     <ul class="second-level">
+        <li><a href="/accommodation/camping-at-louee/" title="Trackside Camping" alt="Trackside Camping">Trackside Camping</a></li>
+        <li><a href="/accommodation/lue-cottage/" title="Lue Cottage" alt="Lue Cottage">Lue Cottage</a></li>
+        <li><a href="/accommodation/shearers-quarters/" title="Shearer's Quarters" alt="Shearer's Quarters">Shearer's Quarters</a></li>
+        <!-- Add more fly-out items here as needed -->
+      </ul>
+    {% endif %}
+    {% if entry.children.length %}
+      <ul class="second-level">
+        {% for child in entry.children %}
+          {{ renderNavListItem(child) }}
         {% endfor %}
-      >
-        <summary>{{ entry.title }}</summary>
-        <ul role="list" class="second-level">
-          {%- for child in entry.children %}{{ renderNavListItem(child) }}{% endfor -%}
-        </ul>
-      </details>
-    </li>
-  {% else %}
-    <li>
-      <a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page" {% endif %}>{{ entry.title }}</a>
-    </li>
-  {%- endif -%}
-{%- endmacro %}
+      </ul>
+    {% endif %}
+  </li>
+  {%- endmacro %}
 
-<ul class="nav-list" role="list">
-{%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
-</ul>
+  <ul class="main-menu">
+    {%- for entry in navPages %}{{ renderNavListItem(entry) }}{%- endfor -%}
+  </ul>
 </nav>
-
-
-
-
