@@ -3,8 +3,8 @@
   {% macro renderNavListItem(entry) -%}
   <li{% if entry.url == page.url %} class="active-class"{% endif %}>
     <a href="{{ entry.url }}" title="{{ entry.title }}" alt="{{ entry.title }}">{{ entry.title }}</a>
-    {% if entry.url == "/recipes/main-ingredient/" %}
-      <ul class="fly-out-menu">
+    {% if entry.url == "/accommodation/" %}
+     <ul class="second-level">
         <li><a href="/recipes/main-ingredient/vegetarian/" title="Vegetarian Recipes" alt="Vegetarian Recipes">Vegetarian Recipes</a></li>
         <li><a href="/recipes/main-ingredient/noodles-ingredients/" title="Noodles Recipes" alt="Noodles Recipes">Noodles Recipes</a></li>
         <li><a href="/recipes/main-ingredient/seafood/" title="Seafood Recipes" alt="Seafood Recipes">Seafood Recipes</a></li>
