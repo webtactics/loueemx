@@ -7,7 +7,7 @@ section: media-training
 date: 2023-07-20
 permalink: /booking-and-pricing-information/
 eleventyNavigation:
-  key: Media Training
+  key: Pricing
   order: 3
 ---
 
