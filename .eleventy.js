@@ -75,12 +75,7 @@ module.exports = function(eleventyConfig) {
     return content;
   });
 
-    // add metagen plugin
-  const metagen = require('eleventy-plugin-metagen');
 
-module.exports = (eleventyConfig) => {
-    eleventyConfig.addPlugin(metagen);
-};
 
 
   // Don't process folders with static assets e.g. images
@@ -95,7 +90,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("admin/");
   eleventyConfig.addPassthroughCopy("_redirects.txt");
   // We additionally output a copy of our CSS for use in Netlify CMS previews
-  eleventyConfig.addPassthroughCopy("_includes/assets/css/jts-grid.css");
+  eleventyConfig.addPassthroughCopy("_includes/assets/css/louee-grid.css");
     // We additionally output a copy of our js for use in Netlify CMS previews
   eleventyConfig.addPassthroughCopy("_includes/assets/js/script.js");
   module.exports = function(eleventyConfig) {
