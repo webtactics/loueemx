@@ -13,7 +13,13 @@
 <li><a href="/legal-services/wills-and-estate-planning-services/">Wills &amp; Estate</a></li>
 </ul>
     {% endif %}
-
+{% if entry.children.length %}
+      <ul class="second-level">
+        {% for child in entry.children %}
+          {{ renderNavListItem(child) }}
+        {% endfor %}
+      </ul>
+    {% endif %}
 </li>
 {%- endmacro %}
 <ul class="main-menu">
