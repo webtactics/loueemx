@@ -8,9 +8,7 @@ description: Third Avenue Consulting is a specialist, independent Public Relatio
 metadata:
   title: Specialist, independent public relations
 permalink: /
-eleventyNavigation:
-  key: Home
-  order: 0
+
 ---
 
 ## Third Avenue Consulting is a specialist, independent Public Relations firm established by Rochelle Burbury, a former Australian Financial Review editor, who has more than 25 years experience as a journalist, high-level PR practitioner and media trainer. ##
