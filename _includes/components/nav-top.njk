@@ -6,14 +6,6 @@
 
 
 
-    {% if entry.url == "/accommodation/" %}
-     <ul class="second-level">
-        <li><a href="/accommodation/camping-at-louee/" title="Trackside Camping" alt="Trackside Camping">Trackside Camping</a></li>
-        <li><a href="/accommodation/lue-cottage/" title="Lue Cottage" alt="Lue Cottage">Lue Cottage</a></li>
-        <li><a href="/accommodation/shearers-quarters/" title="Shearer's Quarters" alt="Shearer's Quarters">Shearer's Quarters</a></li>
-        <!-- Add more fly-out items here as needed -->
-      </ul>
-    {% endif %}
     {% if entry.children.length %}
       <ul class="second-level">
         {% for child in entry.children %}
