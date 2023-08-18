@@ -7,8 +7,8 @@ metaDescription: This is a sample meta description. If one is not present in you
 date: 2023-01-03
 permalink: "/accommodation/camping-at-louee/"
 eleventyNavigation:
-key: Trackside Camping
-parent: Accommodation
+  key: Trackside Camping
+  parent: Accommodation
 
 ---
 

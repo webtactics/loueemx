@@ -6,8 +6,8 @@ metaDescription: This is a sample meta description. If one is not present in you
 date: 2017-01-01T00:00:00.000Z
 permalink: "/accommodation/lue-cottage/"
 eleventyNavigation:
-key: Lue Cottage
-parent: Accommodation
+  key: Lue Cottage
+  parent: Accommodation
 
 ---
 Hosts 12 people max
