@@ -31,6 +31,7 @@
 
 <div class="textwrapper">
 {{ layoutContent | safe }}
+{% assign navPages = collections.all | eleventyNavigationBreadcrumb: "Accommodation" %}
 </div>
 <div class="sidebarwrapper">
 <aside>
