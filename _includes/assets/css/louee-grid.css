@@ -588,10 +588,10 @@ ul.main-menu li ul.second-level {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: auto;
     background-color: var(--white);
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
   
@@ -607,7 +607,7 @@ ul.main-menu li ul.second-level {
     display: block;
   padding: 0.4rem 0;
     color: var(--primary);
-    width: auto;
+    width: 200px;
     text-align: center;
     text-decoration: none;
     border-bottom: 1px solid (var(--lightgrey));
