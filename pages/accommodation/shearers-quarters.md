@@ -11,3 +11,5 @@ eleventyNavigation:
 
 ---
 Rooms With single beds (No Doubles), Shower/loos inside, extra Loo/Shower block outside, kitchen with microwave, fridges, stove, toaster, cutlery and utensils, Courtyard with Gas BBQ, Large dining room, Log fires.
+
+{% assign navPages = collections.all | eleventyNavigationBreadcrumb: "Accommodation" %}
