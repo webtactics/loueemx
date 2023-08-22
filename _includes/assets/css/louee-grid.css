@@ -519,6 +519,7 @@ ul.menusocial, ul.main-menu, ul.footer-menu, ul.second-level {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 0;
+    display: list-item;
 }
 
 
