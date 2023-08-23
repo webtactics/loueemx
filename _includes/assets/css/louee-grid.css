@@ -1305,8 +1305,8 @@ figcaption {
 
 
 li::marker {
-  content: '✝ ';
-  font-size: 1.2em;
+  color: var(--primary);
+  font-size: 1.5em;
 }
 
 
