@@ -29,9 +29,20 @@ const toggleButton = document.querySelector('.toggle-nav');
   });
   
 
+const header = document.querySelector('.topbar');
+const scrollWatcher = document.createElement('div');
 
+scrollWatcher.setAttribute('data-scroll-watcher', '');
+header.before(scrollWatcher);
 
+const navObserver = new IntersectionObserver((entries) => {
+header.classList.toggle('scrolled', !entries[0].isIntersecting)
 
+  }, {rootMargin: "200px 0px 0px 0px"});
+navObserver.observe(scrollWatcher)
+
+// passive event listener
+document.addEventListener('touchstart', onTouchStart, {passive: true});
 
 
 
