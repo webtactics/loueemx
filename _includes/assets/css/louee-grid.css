@@ -813,7 +813,7 @@ ul.off-canvas-list > li.current > a, ul.off-canvas-list > li.active-class > a {
 
   .main {
     position: relative;
-    margin: -100px auto 0 auto;
+    margin: -150px auto 0 auto;
     padding: 0;
     z-index: 2;
     width: calc(100vw - 0.5rem);
