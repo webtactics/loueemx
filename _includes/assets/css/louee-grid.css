@@ -13,7 +13,6 @@
   --text: #333;
   --black: hsla(0,0%,0%,1);
   --black55: hsla(0,0%,0%,0.55);
-  --black30: hsla(0,0%,0%,0.3);
   --lightgrey: #ebebeb;
   --mattblack: hsla(214,12%,11%,1);
   --green: hsla(144, 80%, 22%, 1);
@@ -161,10 +160,7 @@ font-weight: 700;
 color: var(--primary);
 }
 
-.container {
-  background-color: var(--white);
-  background-image: url('https://ik.imagekit.io/webtactics/changs/images/assets/bg/Chang-pattern-191x500-30-clear.png');
-  background-repeat: repeat;}
+.container {}
 
 
   .content-title { background: #ebebeb; display: flex;
@@ -465,7 +461,7 @@ button.blogdetail, .button.blogdetail {margin:0;}
 }
 .topbar {
   position: fixed;
-  background-color: var(--black30);
+  background-color: var(--black55);
   width: 100%;
   padding: 0;
   top: 0;
@@ -817,12 +813,12 @@ ul.off-canvas-list > li.current > a, ul.off-canvas-list > li.active-class > a {
 
   .main {
     position: relative;
-    margin: -40vh auto 0 auto;
+    margin: -10vh auto 0 auto;
     padding: 0;
     z-index: 2;
     width: calc(100vw - 0.5rem);
     max-width: 1440px;
-    background-color: transparent;
+    background-color: var(--white);
     }
     
 
