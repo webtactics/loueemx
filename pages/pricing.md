@@ -8,7 +8,7 @@ date: 2023-07-20
 permalink: /booking-and-pricing-information/
 eleventyNavigation:
   key: Pricing
-  order: 2
+  order: 1
 ---
 <p>All rates include GST. Louee accepts CASH and have EFTPOS facilies on site.</p>
 <h1>TRACK ENTRY FEE'S&nbsp;</h1>

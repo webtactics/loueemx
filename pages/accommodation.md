@@ -8,7 +8,7 @@ date: 2023-07-20
 permalink: /accommodation/
 eleventyNavigation:
   key: Accommodation
-  order: 4
+  order: 3
 ---
 
 # Media Training: #
