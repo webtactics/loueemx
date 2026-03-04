@@ -161,7 +161,12 @@ font-weight: 700;
 color: var(--primary);
 }
 
-.container {}
+.container {
+  margin: 0 auto;
+  background-color: var(--white);
+  z-index: 2;
+  position: relative;
+}
 
 
   .content-title { background: #ebebeb; display: flex;
