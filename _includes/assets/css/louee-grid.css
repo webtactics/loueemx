@@ -1497,3 +1497,85 @@ margin-top: 1rem;
 }
 
 
+
+/* Slide animation box */
+
+.sliderhero.content {  
+  margin:-10rem auto 0 auto;
+  width: calc(100vw - 2rem);
+  max-width: 1280px;
+  padding:  0;
+  background-color: transparent;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity:0;
+    -webkit-transform:translate3d(0,100%,0);
+    transform:translate3d(0,100%,0)
+  }
+  to {
+    opacity:1;
+    -webkit-transform:translate3d(0,0,0);
+    transform:translate3d(0,0,0)
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity:0;
+    -webkit-transform:translate3d(0,100%,0);
+    transform:translate3d(0,100%,0)
+  }
+  to {
+    opacity:1;
+    -webkit-transform:translate3d(0,0,0);
+    transform:translate3d(0,0,0)
+  }
+}
+.fadeInUp {
+  -webkit-animation-name:fadeInUp;
+  animation-name:fadeInUp
+}
+.slick-active .flex-caption {
+  animation-name:fadeInUp;
+  animation-duration:1s;
+  opacity:1
+}
+.flex-caption {
+  background:var(--primary60);
+  color:var(--white);
+  font-size:14px;
+  bottom:20vh;
+  left:0;
+  line-height:18px;
+  padding:20px;
+  position:relative;
+  text-align:center;
+  width: calc(40vw - 2rem);
+  max-width: 600px;
+  margin:0;
+  border-radius:10px;
+}
+.flex-caption.left {
+  left:0;
+  right:auto;
+  top:auto
+}
+.flex-caption.centre {
+  left:10vw;
+  right:auto;
+  top:auto
+}
+.flex-caption.right {
+  left:auto;
+  right:0;
+  top:auto
+}
+
+.flex-caption h2, .flex-caption h3  {
+color:var(--white);
+font-weight:700;
+line-height: 1.5;
+text-align: center;
+text-shadow: 2px 2px 4px var(--black);
+}
