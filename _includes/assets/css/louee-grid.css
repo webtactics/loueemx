@@ -1502,7 +1502,7 @@ margin-top: 1rem;
 /* Slide animation box */
 
 .sliderhero.content {  
-  margin:0 auto;
+  margin:-10rem auto 0 auto;
   width: calc(100vw - 2rem);
   max-width: 1280px;
   padding:  0;
