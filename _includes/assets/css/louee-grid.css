@@ -12,6 +12,7 @@
   --yellow50: hsla(55.73, 93.36%, 52.75%, 0.5);
   --text: #333;
   --black: hsla(0,0%,0%,1);
+  --black40: hsla(0,0%,0%,0.40);
   --black55: hsla(0,0%,0%,0.55);
   --lightgrey: #ebebeb;
   --mattblack: hsla(214,12%,11%,1);
@@ -1542,7 +1543,7 @@ margin-top: 1rem;
   opacity:1
 }
 .flex-caption {
-  background:var(--primary60);
+  background:var(--black40);
   color:var(--white);
   font-size:14px;
   bottom:20vh;
