@@ -1507,6 +1507,7 @@ margin-top: 1rem;
   max-width: 1280px;
   padding:  0;
   background-color: transparent;
+  height:10rem;
 }
 
 @-webkit-keyframes fadeInUp {
